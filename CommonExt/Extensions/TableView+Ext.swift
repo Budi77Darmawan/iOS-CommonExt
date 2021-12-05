@@ -9,19 +9,19 @@ import Foundation
 import UIKit
 
 extension UITableView {
-  func reloads() {
+  public func reloads() {
     DispatchQueue.main.async {
       self.reloadData()
     }
   }
   
-  func endRefreshControl() {
+  public func endRefreshControl() {
     DispatchQueue.main.async {
       self.refreshControl?.endRefreshing()
     }
   }
   
-  func setBackground(imageName: String, messageImage: String?) {
+  public func setBackground(imageName: String, messageImage: String?) {
     DispatchQueue.main.async {
       let parentView = UIView()
       parentView.frame = self.frame
@@ -61,7 +61,7 @@ extension UITableView {
     }
   }
   
-  func clearBackground(separator: UITableViewCell.SeparatorStyle = .singleLine) {
+  public func clearBackground(separator: UITableViewCell.SeparatorStyle = .singleLine) {
     self.backgroundView = nil
     self.separatorStyle = separator
   }
