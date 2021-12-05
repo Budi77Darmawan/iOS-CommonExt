@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		25723A881A5CF7AF4AFDF15F /* Pods_CommonExt_CommonExtTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA515761D7FBD588D5512716 /* Pods_CommonExt_CommonExtTests.framework */; };
+		A6A44725E2C4731723958AC5 /* Pods_CommonExt.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 991A5DE5401841F0A1F01755 /* Pods_CommonExt.framework */; };
 		DBA86616275CB2CC00E5ADBB /* CommonExt.docc in Sources */ = {isa = PBXBuildFile; fileRef = DBA86615275CB2CC00E5ADBB /* CommonExt.docc */; };
 		DBA8661C275CB2CC00E5ADBB /* CommonExt.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBA86611275CB2CC00E5ADBB /* CommonExt.framework */; };
 		DBA86621275CB2CC00E5ADBB /* CommonExtTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA86620275CB2CC00E5ADBB /* CommonExtTests.swift */; };
@@ -27,6 +29,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1727D2BF4483229F10B3228C /* Pods-CommonExt-CommonExtTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CommonExt-CommonExtTests.debug.xcconfig"; path = "Target Support Files/Pods-CommonExt-CommonExtTests/Pods-CommonExt-CommonExtTests.debug.xcconfig"; sourceTree = "<group>"; };
+		26078552C9C3FFFE27A9C659 /* Pods-CommonExt.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CommonExt.debug.xcconfig"; path = "Target Support Files/Pods-CommonExt/Pods-CommonExt.debug.xcconfig"; sourceTree = "<group>"; };
+		5EA50A252E5B3FAEDF7B2BFC /* Pods-CommonExt.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CommonExt.release.xcconfig"; path = "Target Support Files/Pods-CommonExt/Pods-CommonExt.release.xcconfig"; sourceTree = "<group>"; };
+		991A5DE5401841F0A1F01755 /* Pods_CommonExt.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CommonExt.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA515761D7FBD588D5512716 /* Pods_CommonExt_CommonExtTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CommonExt_CommonExtTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBA86611275CB2CC00E5ADBB /* CommonExt.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CommonExt.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBA86614275CB2CC00E5ADBB /* CommonExt.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommonExt.h; sourceTree = "<group>"; };
 		DBA86615275CB2CC00E5ADBB /* CommonExt.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = CommonExt.docc; sourceTree = "<group>"; };
@@ -35,6 +42,7 @@
 		DBA8662C275CB2F300E5ADBB /* View+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Ext.swift"; sourceTree = "<group>"; };
 		DBA8662E275CB33900E5ADBB /* CustomError+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CustomError+Ext.swift"; sourceTree = "<group>"; };
 		DBA86630275CB35200E5ADBB /* TableView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TableView+Ext.swift"; sourceTree = "<group>"; };
+		F837897A366C5624BEEE2F22 /* Pods-CommonExt-CommonExtTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CommonExt-CommonExtTests.release.xcconfig"; path = "Target Support Files/Pods-CommonExt-CommonExtTests/Pods-CommonExt-CommonExtTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +50,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A6A44725E2C4731723958AC5 /* Pods_CommonExt.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,18 +59,30 @@
 			buildActionMask = 2147483647;
 			files = (
 				DBA8661C275CB2CC00E5ADBB /* CommonExt.framework in Frameworks */,
+				25723A881A5CF7AF4AFDF15F /* Pods_CommonExt_CommonExtTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D523C16817844071FF2C61B8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				991A5DE5401841F0A1F01755 /* Pods_CommonExt.framework */,
+				BA515761D7FBD588D5512716 /* Pods_CommonExt_CommonExtTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		DBA86607275CB2CC00E5ADBB = {
 			isa = PBXGroup;
 			children = (
 				DBA86613275CB2CC00E5ADBB /* CommonExt */,
 				DBA8661F275CB2CC00E5ADBB /* CommonExtTests */,
 				DBA86612275CB2CC00E5ADBB /* Products */,
+				EF372B95A8F79BBDFFF3365D /* Pods */,
+				D523C16817844071FF2C61B8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -102,6 +123,18 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		EF372B95A8F79BBDFFF3365D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				26078552C9C3FFFE27A9C659 /* Pods-CommonExt.debug.xcconfig */,
+				5EA50A252E5B3FAEDF7B2BFC /* Pods-CommonExt.release.xcconfig */,
+				1727D2BF4483229F10B3228C /* Pods-CommonExt-CommonExtTests.debug.xcconfig */,
+				F837897A366C5624BEEE2F22 /* Pods-CommonExt-CommonExtTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -120,6 +153,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DBA86625275CB2CC00E5ADBB /* Build configuration list for PBXNativeTarget "CommonExt" */;
 			buildPhases = (
+				B62F10B3A36563EE7E049B17 /* [CP] Check Pods Manifest.lock */,
 				DBA8660C275CB2CC00E5ADBB /* Headers */,
 				DBA8660D275CB2CC00E5ADBB /* Sources */,
 				DBA8660E275CB2CC00E5ADBB /* Frameworks */,
@@ -138,6 +172,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DBA86628275CB2CC00E5ADBB /* Build configuration list for PBXNativeTarget "CommonExtTests" */;
 			buildPhases = (
+				803DE67A6E566AAF939C9141 /* [CP] Check Pods Manifest.lock */,
 				DBA86617275CB2CC00E5ADBB /* Sources */,
 				DBA86618275CB2CC00E5ADBB /* Frameworks */,
 				DBA86619275CB2CC00E5ADBB /* Resources */,
@@ -205,6 +240,53 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		803DE67A6E566AAF939C9141 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CommonExt-CommonExtTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B62F10B3A36563EE7E049B17 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CommonExt-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		DBA8660D275CB2CC00E5ADBB /* Sources */ = {
@@ -361,6 +443,7 @@
 		};
 		DBA86626275CB2CC00E5ADBB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 26078552C9C3FFFE27A9C659 /* Pods-CommonExt.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -388,6 +471,7 @@
 		};
 		DBA86627275CB2CC00E5ADBB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5EA50A252E5B3FAEDF7B2BFC /* Pods-CommonExt.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -415,6 +499,7 @@
 		};
 		DBA86629275CB2CC00E5ADBB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1727D2BF4483229F10B3228C /* Pods-CommonExt-CommonExtTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -436,6 +521,7 @@
 		};
 		DBA8662A275CB2CC00E5ADBB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F837897A366C5624BEEE2F22 /* Pods-CommonExt-CommonExtTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
