@@ -11,6 +11,9 @@
 		DBA8661C275CB2CC00E5ADBB /* CommonExt.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBA86611275CB2CC00E5ADBB /* CommonExt.framework */; };
 		DBA86621275CB2CC00E5ADBB /* CommonExtTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA86620275CB2CC00E5ADBB /* CommonExtTests.swift */; };
 		DBA86622275CB2CC00E5ADBB /* CommonExt.h in Headers */ = {isa = PBXBuildFile; fileRef = DBA86614275CB2CC00E5ADBB /* CommonExt.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DBA8662D275CB2F300E5ADBB /* View+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA8662C275CB2F300E5ADBB /* View+Ext.swift */; };
+		DBA8662F275CB33A00E5ADBB /* CustomError+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA8662E275CB33900E5ADBB /* CustomError+Ext.swift */; };
+		DBA86631275CB35200E5ADBB /* TableView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA86630275CB35200E5ADBB /* TableView+Ext.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +32,9 @@
 		DBA86615275CB2CC00E5ADBB /* CommonExt.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = CommonExt.docc; sourceTree = "<group>"; };
 		DBA8661B275CB2CC00E5ADBB /* CommonExtTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CommonExtTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBA86620275CB2CC00E5ADBB /* CommonExtTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonExtTests.swift; sourceTree = "<group>"; };
+		DBA8662C275CB2F300E5ADBB /* View+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Ext.swift"; sourceTree = "<group>"; };
+		DBA8662E275CB33900E5ADBB /* CustomError+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CustomError+Ext.swift"; sourceTree = "<group>"; };
+		DBA86630275CB35200E5ADBB /* TableView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TableView+Ext.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +77,7 @@
 		DBA86613275CB2CC00E5ADBB /* CommonExt */ = {
 			isa = PBXGroup;
 			children = (
+				DBA8662B275CB2D800E5ADBB /* Extensions */,
 				DBA86614275CB2CC00E5ADBB /* CommonExt.h */,
 				DBA86615275CB2CC00E5ADBB /* CommonExt.docc */,
 			);
@@ -83,6 +90,16 @@
 				DBA86620275CB2CC00E5ADBB /* CommonExtTests.swift */,
 			);
 			path = CommonExtTests;
+			sourceTree = "<group>";
+		};
+		DBA8662B275CB2D800E5ADBB /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				DBA8662C275CB2F300E5ADBB /* View+Ext.swift */,
+				DBA8662E275CB33900E5ADBB /* CustomError+Ext.swift */,
+				DBA86630275CB35200E5ADBB /* TableView+Ext.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -194,7 +211,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DBA8662D275CB2F300E5ADBB /* View+Ext.swift in Sources */,
+				DBA86631275CB35200E5ADBB /* TableView+Ext.swift in Sources */,
 				DBA86616275CB2CC00E5ADBB /* CommonExt.docc in Sources */,
+				DBA8662F275CB33A00E5ADBB /* CustomError+Ext.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -396,6 +416,7 @@
 		DBA86629275CB2CC00E5ADBB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -416,6 +437,7 @@
 		DBA8662A275CB2CC00E5ADBB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
